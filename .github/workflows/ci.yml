@@ -50,7 +50,8 @@ jobs:
       # 5. Run tests inside API container
       # -----------------------------------------------------
       - name: Run test_app.py inside API container
-        run: docker compose exec -T api python test_app.py
+        run: docker compose exec -T api python /app/test_app.py
+
 
       # -----------------------------------------------------
       # 6. Shut down services (always runs)
