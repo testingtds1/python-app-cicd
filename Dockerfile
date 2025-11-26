@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY app.py .
+COPY test_app.py .
 
 # Expose the application port (optional, for app running on port 5000)
 EXPOSE 5000
