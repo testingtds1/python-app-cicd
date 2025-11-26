@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: python
 
     steps:
       # -----------------------------------------------------
@@ -55,7 +55,7 @@ jobs:
       # -----------------------------------------------------
       # 6. Shut down services (always runs)
       # -----------------------------------------------------
-      - name: Shut down Docker Compose
-        if: always()
-        run: docker compose down
+      # - name: Shut down Docker Compose
+      #  if: always()
+      #  run: docker compose down
 
